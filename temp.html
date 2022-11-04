@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="data:,">
+    <script src="https://kit.fontawesome.com/cf2fae4837.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/norm.css">
+    <link rel="stylesheet" href="./css/temp.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesionel site</title>
+</head>
+
+<body>
+    <div class="content-all">
+        <!-- start settings box -->
+        <div class="settings-box">
+            <div class="rotatei" onclick="showHide()">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="settings-container">
+                <div class="option-box">
+                    <h4>Colors</h4>
+                    <ul class="colors-list">
+                        <li class="active" data-color="#FF6D28"></li>
+                        <li data-color="#ff3363"></li>
+                        <li data-color="#395144"></li>
+                        <li data-color="#7DE5ED"></li>
+                        <li data-color="#FCE700"></li>
+                    </ul>
+                </div>
+                <div class="option-box">
+                    <h4>Random Background</h4>
+                    <div class="random-backgrounds">
+                        <span class="yes active" data-background="yes">Yes</span>
+                        <span class="no" data-background="no">No</span>
+                    </div>
+                </div>
+                <div class="option-box">
+                    <h4>Show Bullets</h4>
+                    <div class="bullets-option">
+                        <span class="yes active" data-display="show">Show</span>
+                        <span class="no" data-display="hide">Hide</span>
+                    </div>
+                </div>
+                <button class="reset-option">Reset Option!</button>
+            </div>
+        </div>
+        <!-- end settings box -->
+
+        <!-- start navigation bullets -->
+        <div class="nav-bullets">
+            <div class="bullets" data-section=".about-us">
+                <div class="tooltip">About Us</div>
+            </div>
+            <div class="bullets" data-section=".skills">
+                <div class="tooltip">Our Skills</div>
+            </div>
+            <div class="bullets" data-section=".gallery">
+                <div class="tooltip">Our gallery</div>
+            </div>
+            <div class="bullets" data-section=".timeline">
+                <div class="tooltip">timeline</div>
+            </div>
+            <div class="bullets" data-section=".features">
+                <div class="tooltip">features</div>
+            </div>
+        </div>
+        <!-- end navigation bullets -->
+
+        <!-- start landing page -->
+        <div class="landing-page">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="header">
+                    <div class="logo"><span>YASSINE</span> Imgharen</div>
+                    <div class="links-container" style="width: 100%;">
+                        <ul class="links">
+                            <li><a href="#" class="active" data-section=".about-us">ABOUT US</a></li>
+                            <li><a href="#" data-section=".skills">SKILLS</a></li>
+                            <li><a href="#" data-section=".gallery">SERVICES</a></li>
+                            <li><a href="#" data-section=".timeline">CONTACT US</a></li>
+                            <li><a href="#" data-section=".testimonials">TESTIMONIALS</a></li>
+                        </ul>
+                        <button class="toggle-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1>I'm <span>React Js</span> Developer</h1>
+                <p>Web developers design and build websites. They are typically responsible for the appearance.</p>
+            </div>
+        </div>
+        <!-- end landing page -->
+
+        <!-- start about us -->
+        <div class="container">
+            <div class="about-us">
+                <div class="info-box">
+                    <h2>About Us</h2>
+                    <p>Developers, also known as software developers or computer programmers, are responsible for
+                        developing, coding, installing, and maintaining software systems. Developers form a key part of
+                        the IT team and may be required to modify existing software products or develop entirely new
+                        resources.</p>
+                </div>
+                <div class="image-box">
+                    <img src="images/19362653.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- end about us -->
+
+        <!-- start our skills -->
+        <div class="skills">
+            <div class="container">
+                <h2>Our Skills</h2>
+                <div class="skill-box">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-progress">
+                        <span data-progress="80%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-progress">
+                        <span data-progress="75%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">JAVA SCRIPT</div>
+                    <div class="skill-progress">
+                        <span data-progress="70%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">BOOTSTRAP</div>
+                    <div class="skill-progress">
+                        <span data-progress="75%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">VANILLA JS</div>
+                    <div class="skill-progress">
+                        <span data-progress="85%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">JQUERY</div>
+                    <div class="skill-progress">
+                        <span data-progress="40%"></span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-name">MY SQL</div>
+                    <div class="skill-progress">
+                        <span data-progress="60%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end our skills -->
+
+        <!-- start gallery -->
+        <div class="gallery">
+            <div class="container">
+                <h2>Our gallery</h2>
+                <div class="images-box">
+                    <img src="images/01.jpg" alt="images one">
+                    <img src="images/02.jpg" alt="images two">
+                    <img src="images/03.jpg" alt="images three">
+                    <img src="images/04.jpg" alt="images four">
+                    <img src="images/05.jpg" alt="images five">
+                    <img src="images/06.jpg" alt="images six">
+                    <img src="images/07.jpg" alt="">
+                    <img src="images/08.jpg" alt="images eight">
+                    <img src="images/09.jpg" alt="">
+                    <img src="images/10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallery -->
+
+    <!-- start timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2018</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Le développement Web est le codage ou la programmation qui permet de faire fonctionner un
+                            site Web, selon les exigences du propriétaire. Il traite principalement de l'aspect non
+                            conceptuel de la création de sites Web, qui comprend le codage et l'écriture du balisage.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Le développement Web est le codage ou la programmation qui permet de faire fonctionner un
+                            site Web, selon les exigences du propriétaire. Il traite principalement de l'aspect non
+                            conceptuel de la création de sites Web, qui comprend le codage et l'écriture du balisage.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Le développement Web est le codage ou la programmation qui permet de faire fonctionner un
+                            site Web, selon les exigences du propriétaire. Il traite principalement de l'aspect non
+                            conceptuel de la création de sites Web, qui comprend le codage et l'écriture du balisage.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Le développement Web est le codage ou la programmation qui permet de faire fonctionner un
+                            site Web, selon les exigences du propriétaire. Il traite principalement de l'aspect non
+                            conceptuel de la création de sites Web, qui comprend le codage et l'écriture du balisage.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- start timeline -->
+
+    <!-- start our features -->
+    <div class="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <img src="images/6979567.png" alt="">
+                <h4>Developpement Web</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="feat-box">
+                <img src="images/3010410.png" alt="">
+                <h4>Developpement Design</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="feat-box">
+                <img src="images/3089196.png" alt="">
+                <h4>Web Full Stack</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="feat-box">
+                <img src="images/3574895.png" alt="">
+                <h4>Front End Web</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="feat-box">
+                <img src="images/3652619.png" alt="">
+                <h4>Back End Web</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="feat-box">
+                <img src="images/2983759.png" alt="">
+                <h4>Developer Disque Top</h4>
+                <p>We Are Profesionel Marketeers, We Will Do Anything You Imagine.</p>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+    <!-- end our features -->
+
+    <!-- start testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="test-app">
+                <div class="testi-box">
+                    <p>The client's résumé was very positive: The technological expectations placed in SharePoint 2010
+                        have been confirmed.</p>
+                    <div class="person-info">
+                        <i class="fa-sharp fa-solid fa-person"></i>
+                        <div class="info">
+                            <h4>Yassine Imgharen</h4>
+                            <p>CEO at RedBubble</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-box">
+                    <p>I'm very happy with the product its amazing and i has been comfirmed recieve it very fast and the price was amazing.
+                    </p>
+                    <div class="person-info">
+                        <i class="fa-sharp fa-solid fa-comments"></i>
+                        <div class="info">
+                            <h4>Oussama ELZero</h4>
+                            <p>Full Stuck Dev</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-box">
+                    <p>to make changes that would improve customer service on a continuous basis, directly resulting
+                        from timely customer</p>
+                    <div class="person-info">
+                        <i class="fa-solid fa-comment"></i>
+                        <div class="info">
+                            <h4>Redouan Imgharen</h4>
+                            <p>Application Devloper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimonials -->
+
+    <!-- start cotact us -->
+    <div class="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" placeholder="Your Name" name="username">
+                    <input type="tel" placeholder="Your Phone" name="Phone">
+                    <input type="email" placeholder="Your Email" name="Email">
+                    <input type="text" placeholder="Subject" name="Subject">
+                </div>
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end cotact us -->
+
+    <!-- start footer -->
+    <footer>Created By Yassine Imgharen</footer>
+    <!-- end footer -->
+    <script src="temp.js"></script>
+</body>
+
+</html>
